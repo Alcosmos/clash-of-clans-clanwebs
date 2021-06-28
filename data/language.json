@@ -1,0 +1,158 @@
+{
+	"en": {
+		"language": "English",
+		
+		"descHeader": "To the barracks, Conquerors!",
+		"descBody": "",
+		
+		"descMembers": "We got ",
+		"descWars": " members, won ",
+		"descLeague": " wars, and we are in ",
+		"descHalfFinal": ".",
+		
+		"descType": "Clan is currently ",
+		"descTypeOpen": "open",
+		"descTypeClosed": "closed",
+		"descRequired": "; minimum trophies to join is ",
+		"descFinal": ".",
+		
+		"descJoin": "Join now! Clan tag: ",
+		
+		"sideHeaderMore": "More Clash of Clans",
+		"sideHeader": "",
+		"sideBody": "",
+		
+		"goTop": "Back to top",
+		
+		"footerWeb": "Clash of Clans' Clan webs by ",
+		"footerGit": "Want to make ",
+		"footerGitLink": " your own Clan website",
+		"footerGitFinal": "?",
+		
+		
+		
+		"leader": "Leader",
+		"coLeader": "Co-leader",
+		"admin": "Elder",
+		"member": "Member",
+		
+		"memberLeague": "League: ",
+		"memberTrophies": " trophies",
+		"memberBhTrophies": " builder trophies",
+		
+		"memberPrevious": "Previous clan rank: ",
+		
+		"memberDonated": "Donated",
+		"memberReceived": "Received",
+		
+		
+		
+		"Unranked": "Unranked",
+		"Bronze League III": "Bronze III",
+		"Bronze League II": "Bronze II",
+		"Bronze League I": "Bronze I",
+		"Silver League III": "Silver III",
+		"Silver League II": "Silver II",
+		"Silver League I": "Silver I",
+		"Gold League III": "Gold III",
+		"Gold League II": "Gold II",
+		"Gold League I": "Gold I",
+		"Crystal League III": "Crystal III",
+		"Crystal League II": "Crystal II",
+		"Crystal League I": "Crystal I",
+		"Master League III": "Master III",
+		"Master League II": "Master II",
+		"Master League I": "Master I",
+		"Champion League III": "Champion III",
+		"Champion League II": "Champion II",
+		"Champion League I": "Champion I",
+		"Titan League III": "Titan III",
+		"Titan League II": "Titan II",
+		"Titan League I": "Titan I",
+		"Legend League": "Legend",
+		
+		
+		
+		"maintTitle": "Maintenance!",
+		"maintBody": "Clash of Clans is under maintenance, so we can't show you Clan data.",
+		"maintBodyFinal": "We will be back soon!"
+	},
+	"es": {
+		"language": "Español",
+		
+		"descHeader": "¡A los campamentos!",
+		"descBody": "",
+		
+		"descMembers": "Tenemos ",
+		"descWars": " miembros, hemos ganado ",
+		"descLeague": " guerras y estamos en la liga de ",
+		"descHalfFinal": ".",
+		
+		"descType": "El Clan actualmente se encuentra ",
+		"descTypeOpen": "abierto",
+		"descTypeClosed": "cerrado",
+		"descRequired": "; el mínimo de trofeos para unirse es ",
+		"descFinal": ".",
+		
+		"descJoin": "¡Únete ahora! Tag del Clan: ",
+		
+		"sideHeaderMore": "Más Clash of Clans",
+		"sideHeader": "",
+		"sideBody": "",
+		
+		"goTop": "Volver arriba",
+		
+		"footerWeb": "Clash of Clans' Clan webs por ",
+		"footerGit": "¿Quieres crear ",
+		"footerGitLink": " una web para tu propio Clan",
+		"footerGitFinal": "?",
+		
+		
+		
+		"leader": "Líder",
+		"coLeader": "Colíder",
+		"admin": "Veterano",
+		"member": "Miembro",
+		
+		"memberLeague": "Liga: ",
+		"memberTrophies": " trofeos",
+		"memberBhTrophies": " trofeos del constructor",
+		
+		"memberPrevious": "Ranking del Clan anterior: ",
+		
+		"memberDonated": "Donaciones",
+		"memberReceived": "Recibidas",
+		
+		
+		
+		"Unranked": "Sin liga",
+		"Bronze League III": "Bronce III",
+		"Bronze League II": "Bronce II",
+		"Bronze League I": "Bronce I",
+		"Silver League III": "Plata III",
+		"Silver League II": "Plata II",
+		"Silver League I": "Plata I",
+		"Gold League III": "Oro III",
+		"Gold League II": "Oro II",
+		"Gold League I": "Oro I",
+		"Crystal League III": "Cristal III",
+		"Crystal League II": "Cristal II",
+		"Crystal League I": "Cristal I",
+		"Master League III": "Maestro III",
+		"Master League II": "Maestro II",
+		"Master League I": "Maestro I",
+		"Champion League III": "Campeones III",
+		"Champion League II": "Campeones II",
+		"Champion League I": "Campeones I",
+		"Titan League III": "Titán III",
+		"Titan League II": "Titán II",
+		"Titan League I": "Titán I",
+		"Legend League": "Leyenda",
+		
+		
+		
+		"maintTitle": "¡Mantenimiento!",
+		"maintBody": "Clash of Clans está en mantenimiento, por lo que no podemos mostrar los datos del Clan.",
+		"maintBodyFinal": "¡Regresaremos pronto!"
+	}
+}
