@@ -13,11 +13,11 @@
 	$description='A Clash of Clans\' Clan webs';
 	$keywords='game games juego juegos clash of clans royale alcosmos war wars guerra guerras de clan clanes';
 	
-	// URL to Clash of Clans API
-	$apiUrl = 'https://api.clashofclans.com/v1/clans/%23';
-	
 	// Don't include the #
 	$clanTag='';
+	
+	// URL to Clash of Clans API
+	$apiUrl = 'https://api.clashofclans.com/v1/clans/%23';
 	
 	// Your Supercell developer key - https://developer.clashofclans.com
 	$apiKey = '';
