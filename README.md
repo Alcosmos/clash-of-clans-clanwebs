@@ -1,6 +1,6 @@
 # clash-of-clans-clanwebs
-A simple way to get a real time self-updating Clan website through Clash of Clans API (v1).
-Example: https://losvencedores.ddns.net
+A simple way to get a real time self-updating Clan website through Clash of Clans API (v1). If the API is down or in maintenance, it will show a maintenance page.
+Working example: https://losvencedores.ddns.net
 Available in English and Spanish.
 Distributed under Apache License 2.0. Do whatever you want with it, but don't remove credits.
 
