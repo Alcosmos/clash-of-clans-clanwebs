@@ -5,9 +5,9 @@
 	
 	
 	
-	// Available languages: es en
-	// You can add your own languate modifying data/languages.json
-	$defaultLang='es';
+	// Available languages: en es
+	// You can add your own languate modifying data/language.json
+	$defaultLang='en';
 	
 	// Search engine results
 	$description='A Clash of Clans\' Clan webs';
