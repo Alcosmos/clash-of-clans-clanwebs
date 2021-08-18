@@ -20,6 +20,5 @@ Distributed under Apache License 2.0. Do whatever you want with it, but don't re
 
 ## Updates
 * **V1.1** Links updated
-* 
 ---
 If you found a bug or got any problem during the process, feel free to open an issue in the repository or contact me in any other way, but please, try by yourself before doing it.
