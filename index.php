@@ -350,7 +350,7 @@ echo ';">
 		<footer class="Footer" ref="Footer">
 			<div class="Footer-wrapper">
 				<div class="Footer-primarynav js-hover-effect" ref="primaryNav">
-					<?=$lang['footerWeb']?><a href="https://alcosmos.ddns.net" target="_blank">Alcosmos</a> 2021 - <?=date('Y')?>.
+					<?=$lang['footerWeb']?><a href="https://alcosmos.net" target="_blank">Alcosmos</a> 2021 - <?=date('Y')?>.
 					<?=$lang['footerGit']?><a href="https://github.com/Alcosmos/clash-of-clans-clanwebs" target="_blank"><?=$lang['footerGitLink']?></a><?=$lang['footerGitFinal']?>
 				</div>
 
@@ -366,7 +366,7 @@ echo ';">
 
 				
 				<div class="Footer-secondarynav  js-hover-effect">
-					<a href="https://alcosmos.ddns.net" target="_blank" class="Footer-item js-click" data-category="Footer">Alcosmos' Web</a>
+					<a href="https://alcosmos.net" target="_blank" class="Footer-item js-click" data-category="Footer">Alcosmos' Web</a>
 					<a href="https://github.com/Alcosmos/clash-of-clans-clanwebs" target="_blank" class="Footer-item js-click" data-category="Footer">Clan webs' GitHub</a>
 				</div>
 
