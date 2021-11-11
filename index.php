@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
-	//ini_set('display_errors', 1);
-	//ini_set('display_startup_errors', 1);
-	//error_reporting(E_ALL);
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
 	
 	include('config.php');
 	
@@ -25,10 +25,13 @@
 		]
 	];
 	
+	// Hides errors as comments, keeping them visible in teh source for debugging
+	echo '<!-- Hello! ';
 	$context = stream_context_create($opts);
 	//file_get_contents('data/maint.json', false, $context);
 	$membersURL = file_get_contents($apiUrl.$clanTag, false, $context);
 	//$membersURL = file_get_contents('https://api.clashofclans.com/v1/clans/%23'.$clantag.'/members', false, $context);
+	echo '-->';
 	
 	if ($membersURL != true) {
 		maintenance();
@@ -169,7 +172,7 @@
 <div class="home-main-news-item">
 	<div class="home-main-news-item-image">
 		<div class="home-main-picture">
-			<img src="<?=$clan['badgeUrls']['large']?>" class="image-medium">
+			<img src="<?=$clan['badgeUrls']['large']?>" class="image-medium"><br>
 		</div>
 	</div>
 	<div class="home-main-news-item-content">
@@ -192,9 +195,11 @@
 			<?=$lang['descMembers'].$clan['members'].$lang['descWars'].$clan['warWins'].$lang['descLeague'].$lang[$clan['warLeague']['name']].$lang['descHalfFinal']?>
 			<br><br>
 			<?=$lang['descType'].($clan['type']=='open'?$lang['descTypeOpen']:$lang['descTypeClosed']).$lang['descRequired'].$clan['requiredTrophies'].$lang['descFinal']?>
+			
+			<h3><?=$lang['descJoin'].$clan['tag']?></h3>
+			
+			
 		</p>
-		
-		<h3><?=$lang['descJoin'].$clan['tag']?></h3>
 	</div>
 </div>
 							</div>
@@ -224,7 +229,7 @@ switch ($member['role']) {
 }
 echo ';">
 			<img src="'.$member['league']['iconUrls']['small'].'" align="left"><h4>#'.$member['clanRank'].' '.$member['name'].'</h4><br>
-			<h5>'.$lang[$member['role']].'</h5>
+			<h5><img src="data/images/exp.png"> '.$member['expLevel'].' - '.$lang[$member['role']].'</h5>
 		</div>
 		<div class="home-news-primary-item-text">
 			<p>
@@ -257,8 +262,7 @@ echo ';">
 	<div class="BlogDetail-Side">
 	<h1 class="BlogDetail-Side-title"><?=$lang['sideHeaderMore']?></h1>
 	<ul class="BlogDetail-Side-list">
-
-					<li>
+			<li>
 				<a href="https://www.facebook.com/ClashOfClansESC/" title="Facebook" class="SocialItem" target="_blank">
 					<span class="BlogDetail-Side-svg-wrapper">
 						<svg viewBox="0 0 87 87" style="vertical-align:middle;" class="icon-facebook">
@@ -324,6 +328,50 @@ echo ';">
 					</span>
 				</a>
 			</li>
+			<h1 class="BlogDetail-Side-title"><?=$lang['sideHeaderTrophies']?></h1>
+				<div class="trophies">
+					<?php
+						$leagues = array(
+								'Bronze League III',
+								'Bronze League II',
+								'Bronze League I',
+								'Silver League III',
+								'Silver League II',
+								'Silver League I',
+								'Gold League III',
+								'Gold League II',
+								'Gold League I',
+								'Crystal League III',
+								'Crystal League II',
+								'Crystal League I',
+								'Master League III',
+								'Master League II',
+								'Master League I',
+								'Champion League III',
+								'Champion League II',
+								'Champion League I');
+						
+						if ($clan['warLeague']['name'] != "Unranked") {
+							$prevLeague = "";
+							
+							foreach ($leagues as $thisLeague) {
+								if ($thisLeague != $clan['warLeague']['name']) {
+									echo '
+					<img src="data/images/clan_leagues/'.$thisLeague.'.png">';
+								} else {
+									echo '
+					<div class="big">
+						<img src="data/images/clan_leagues/'.$thisLeague.'.png">
+					</div>';
+									
+									break;
+								}
+								
+								$prevLeague = $thisLeague;
+							}
+						}
+					?>
+				</div>
 			<h1 class="BlogDetail-Side-title"><?=$lang['sideHeader']?></h1>
 			<p class="BlogDetail-Side-body">
 				<?=$lang['sideBody']?>
