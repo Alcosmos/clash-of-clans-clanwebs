@@ -25,7 +25,7 @@
 		]
 	];
 	
-	// Hides errors as comments, keeping them visible in teh source for debugging
+	// Hides errors as comments, keeping them visible in the source for debugging
 	echo '<!-- Hello! ';
 	$context = stream_context_create($opts);
 	//file_get_contents('data/maint.json', false, $context);

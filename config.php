@@ -1,5 +1,5 @@
 <?php
-	// Clan webs By Alcosmos - https://alcosmos.net
+	// Clan webs By Alcosmos v2 - https://alcosmos.net
 	// https://github.com/Alcosmos/clash-of-clans-clanwebs
 	// Read the README.md
 	
