@@ -33,6 +33,12 @@
 	//$membersURL = file_get_contents('https://api.clashofclans.com/v1/clans/%23'.$clantag.'/members', false, $context);
 	echo '-->';
 	
+	if (str_contains($http_response_header[0], '403')) {
+		authError();
+		
+		return;
+	}
+	
 	if ($membersURL != true) {
 		maintenance();
 		
@@ -497,6 +503,43 @@ echo ';">
 
 
 <?php
+	function authError() {
+		global $languages, $lang;
+		echo '<html>
+<head>
+	<title>'.$lang['authErrorTitle'].' - Clash of Clans</title>
+	<link rel="stylesheet" href="data/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="maint">
+';
+
+		printGoto();
+
+		echo '
+	<h1>'.$lang['authErrorTitle'].'</h1>
+	<h4>';
+
+		$count = 0;
+
+		foreach ($languages as $key => $value) {
+			$count++;
+			
+			echo '<a href="" onclick="goto'.$key.'()">'.$value['language'].'</a>';
+			if ($count != count($languages)) {
+				echo ' - ';
+			}
+		}
+
+		echo '</h4>
+	<h3>'.$lang['authErrorBody'].'</h3>
+	<h3>'.$lang['authErrorFinal'].'</h3>
+</body>
+<html>';
+	}
+
+
+
 	function maintenance() {
 		global $languages, $lang;
 		echo '<html>
@@ -508,24 +551,24 @@ echo ';">
 <body class="maint">
 ';
 
-printGoto();
+		printGoto();
 
-echo '
+		echo '
 	<h1>'.$lang['maintTitle'].'</h1>
 	<h4>';
 
-$count = 0;
+		$count = 0;
 
-foreach ($languages as $key => $value) {
-	$count++;
-	
-	echo '<a href="" onclick="goto'.$key.'()">'.$value['language'].'</a>';
-	if ($count != count($languages)) {
-		echo ' - ';
-	}
-}
+		foreach ($languages as $key => $value) {
+			$count++;
+			
+			echo '<a href="" onclick="goto'.$key.'()">'.$value['language'].'</a>';
+			if ($count != count($languages)) {
+				echo ' - ';
+			}
+		}
 
-echo '</h4>
+		echo '</h4>
 	<h3>'.$lang['maintBody'].'</h3>
 	<h3>'.$lang['maintBodyFinal'].'</h3>
 </body>

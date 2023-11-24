@@ -74,6 +74,12 @@
 		
 		
 		
+		"authErrorTitle": "Authentication problem!",
+		"authErrorBody": "Authentication from this IP using the current API key is failing.",
+		"authErrorFinal": "Check the site config!",
+		
+		
+		
 		"maintTitle": "Maintenance!",
 		"maintBody": "Clash of Clans is under maintenance, so we can't show you Clan data.",
 		"maintBodyFinal": "We will be back soon!"
@@ -153,8 +159,14 @@
 		
 		
 		
+		"authErrorTitle": "¡Fallo de autenticación!",
+		"authErrorBody": "La autenticación desde la IP del servidor utilizando la API key actual está fallando.",
+		"authErrorFinal": "¡Revisa la configuración del sitio web!",
+		
+		
+		
 		"maintTitle": "¡Mantenimiento!",
-		"maintBody": "Clash of Clans está en mantenimiento, por lo que no podemos mostrar los datos del Clan.",
+		"maintBody": "Clash of Clans está en mantenimiento, por lo que no podemos mostrar los datos del Clan",
 		"maintBodyFinal": "¡Regresaremos pronto!"
 	}
 }
