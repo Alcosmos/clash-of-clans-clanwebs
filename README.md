@@ -10,7 +10,7 @@ Available in English and Spanish.
 Distributed under Apache License 2.0. Do whatever you want with it, but don't remove credits.
 
 ## How to install
-* In the first place you will need a hosting to upload it. You can find good free hostings if you look around, but that's up to you.
+* First of all, you will need a hosting to upload it. You can find good free hostings if you look around, but that's up to you.
 * Once you have a way to host it, you will need to edit _config.php_. Essential ones will be _$defaultLang_ to the default language of the website (_en_ for English and _es_ for Spanish), _$clanTag_ to your Clan tag (without the #) and _$apiKey_ to your Clash of Clans developer key.
 
 ## How to get a Clash of Clans developer key
