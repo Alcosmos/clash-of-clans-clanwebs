@@ -1,7 +1,7 @@
 # clash-of-clans-clanwebs
 A simple way to get a real time self-updating Clan website through Clash of Clans API. If the API is down or in maintenance, it will show a maintenance page.
 
-Version 3.
+Version 3.1.
 
 Working example: https://losvencedores.ddns.net
 
@@ -24,5 +24,6 @@ Distributed under Apache License 2.0. Do whatever you want with it, but don't re
 * **v1.1** - Links updated.
 * **v2** - Added Clan trophies in the side menu and members levels.
 * **v3** - A new message is displayed instead of the maintenance one if there's an API authentication problem.
+* **v3.1** - Renamed field 'versusTrophies' to 'builderBaseTrophies' in order to match Clash of Clans API update.
 ---
 If you found a bug or got any problem during the process, feel free to open an issue in the repository or contact me in any other way, but please, try by yourself before doing it.

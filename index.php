@@ -241,7 +241,7 @@ echo ';">
 			<p>
 				'.$lang['memberLeague'].$lang[$member['league']['name']].'<br>
 				'.$member['trophies'].$lang['memberTrophies'].'<br>
-				'.$member['versusTrophies'].$lang['memberBhTrophies'].'<br><br>
+				'.$member['builderBaseTrophies'].$lang['memberBhTrophies'].'<br><br>
 				'.$lang['memberPrevious'].'#'.$member['previousClanRank'].' ('.sprintf("%+d", $member['previousClanRank']-$member['clanRank']).')<br>
 			</p>
 			<center>
